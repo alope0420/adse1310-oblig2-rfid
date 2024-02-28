@@ -1,0 +1,100 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3 Copyright 2013 The Android Open Source Project
+4
+5 Licensed under the Apache License, Version 2.0 (the "License");
+6 you may not use this file except in compliance with the License.
+7 You may obtain a copy of the License at
+8
+9     http://www.apache.org/licenses/LICENSE-2.0
+10
+11 Unless required by applicable law or agreed to in writing, software
+12 distributed under the License is distributed on an "AS IS" BASIS,
+13 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+14 See the License for the specific language governing permissions and
+15 limitations under the License.
+16-->
+17<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+18    package="com.example.android.bluetoothlegatt"
+19    android:versionCode="1"
+20    android:versionName="1.0" >
+21
+22    <uses-sdk
+23        android:minSdkVersion="18"
+24        android:targetSdkVersion="28" />
+25
+26    <!-- Min/target SDK versions (<uses-sdk>) managed by build.gradle -->
+27
+28
+29    <!--
+30    Declare this required feature if you want to make the app available to BLE-capable
+31    devices only.  If you want to make your app available to devices that don't support BLE,
+32    you should omit this in the manifest.  Instead, determine BLE capability by using
+33    PackageManager.hasSystemFeature(FEATURE_BLUETOOTH_LE)
+34    -->
+35    <uses-feature
+35-->C:\Users\rescu\Documents\adse1310\oblig2\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:30:5-89
+36        android:name="android.hardware.bluetooth_le"
+36-->C:\Users\rescu\Documents\adse1310\oblig2\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:30:19-63
+37        android:required="true" />
+37-->C:\Users\rescu\Documents\adse1310\oblig2\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:30:64-87
+38
+39    <uses-permission android:name="android.permission.BLUETOOTH" />
+39-->C:\Users\rescu\Documents\adse1310\oblig2\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:32:5-67
+39-->C:\Users\rescu\Documents\adse1310\oblig2\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:32:22-65
+40    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+40-->C:\Users\rescu\Documents\adse1310\oblig2\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:33:5-73
+40-->C:\Users\rescu\Documents\adse1310\oblig2\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:33:22-71
+41    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+41-->C:\Users\rescu\Documents\adse1310\oblig2\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:34:5-78
+41-->C:\Users\rescu\Documents\adse1310\oblig2\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:34:22-76
+42    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+42-->C:\Users\rescu\Documents\adse1310\oblig2\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:35:5-80
+42-->C:\Users\rescu\Documents\adse1310\oblig2\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:35:22-78
+43    <uses-permission android:name="android.permission.CAMERA" />
+43-->C:\Users\rescu\Documents\adse1310\oblig2\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:36:5-64
+43-->C:\Users\rescu\Documents\adse1310\oblig2\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:36:22-62
+44
+45    <application
+45-->C:\Users\rescu\Documents\adse1310\oblig2\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:38:5-50:19
+46        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+46-->[com.android.support:support-compat:28.0.0] C:\Users\rescu\.gradle\caches\transforms-3\f4c338b9de01ec0e868a49eb0cd6e827\transformed\support-compat-28.0.0\AndroidManifest.xml:22:18-91
+47        android:debuggable="true"
+48        android:extractNativeLibs="true"
+49        android:icon="@drawable/ic_launcher"
+49-->C:\Users\rescu\Documents\adse1310\oblig2\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:39:9-45
+50        android:label="@string/app_name"
+50-->C:\Users\rescu\Documents\adse1310\oblig2\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:38:18-50
+51        android:testOnly="true"
+52        android:theme="@android:style/Theme.Holo.Light" >
+52-->C:\Users\rescu\Documents\adse1310\oblig2\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:40:9-56
+53        <activity
+53-->C:\Users\rescu\Documents\adse1310\oblig2\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:41:9-47:20
+54            android:name="com.example.android.bluetoothlegatt.DeviceScanActivity"
+54-->C:\Users\rescu\Documents\adse1310\oblig2\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:41:19-53
+55            android:label="@string/app_name" >
+55-->C:\Users\rescu\Documents\adse1310\oblig2\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:42:13-45
+56            <intent-filter>
+56-->C:\Users\rescu\Documents\adse1310\oblig2\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:43:13-46:29
+57                <action android:name="android.intent.action.MAIN" />
+57-->C:\Users\rescu\Documents\adse1310\oblig2\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:44:17-68
+57-->C:\Users\rescu\Documents\adse1310\oblig2\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:44:25-66
+58
+59                <category android:name="android.intent.category.LAUNCHER" />
+59-->C:\Users\rescu\Documents\adse1310\oblig2\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:45:17-76
+59-->C:\Users\rescu\Documents\adse1310\oblig2\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:45:27-74
+60            </intent-filter>
+61        </activity>
+62        <activity android:name="com.example.android.bluetoothlegatt.DeviceControlActivity" />
+62-->C:\Users\rescu\Documents\adse1310\oblig2\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:48:9-58
+62-->C:\Users\rescu\Documents\adse1310\oblig2\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:48:19-56
+63
+64        <service
+64-->C:\Users\rescu\Documents\adse1310\oblig2\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:49:9-77
+65            android:name="com.example.android.bluetoothlegatt.BluetoothLeService"
+65-->C:\Users\rescu\Documents\adse1310\oblig2\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:49:18-52
+66            android:enabled="true" />
+66-->C:\Users\rescu\Documents\adse1310\oblig2\BluetoothLeGatt\Application\src\main\AndroidManifest.xml:49:53-75
+67    </application>
+68
+69</manifest>
